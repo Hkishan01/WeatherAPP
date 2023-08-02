@@ -25,7 +25,7 @@ const Home = () => {
     if (location !== null) {
       try {
         fetch(
-          `http://api.weatherapi.com/v1/current.json?key=4c421c6399e2449c8e9165923232807&q=${location}&aqi=no`
+          `https://api.weatherapi.com/v1/current.json?key=4c421c6399e2449c8e9165923232807&q=${location}&aqi=no`
         )
           .then((res) => res.json())
           .then((data) => {
